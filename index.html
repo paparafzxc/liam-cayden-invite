@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Liam & Cayden – Double Celebration</title>
+  <meta name="description" content="A one‑page invitation website with sliders for Liam's Advance Birthday and Cayden's Christening." />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind (CDN build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#2a5fff',
+              50: '#eef3ff',
+              100: '#dbe6ff',
+              200: '#b6ccff',
+              300: '#8fb2ff',
+              400: '#6998ff',
+              500: '#437eff',
+              600: '#2a5fff',
+              700: '#1f48c4',
+              800: '#183792',
+              900: '#122864'
+            },
+            accent: '#F2C14E',
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            sans: ['Poppins', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,0.08)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+    /* Decorative underline */
+    .title-underline::after { content: ""; display:block; width:80px; height:4px; margin:14px auto 0; background:linear-gradient(90deg,#2a5fff,#8fb2ff); border-radius:999px; }
+    /* Hero overlay */
+    .hero-overlay { background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.35)); }
+  </style>
+</head>
+<body class="bg-primary-50 text-slate-800 font-sans">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="#top" class="flex items-center gap-2 font-display text-xl font-semibold text-primary-700">
+        <span class="inline-block w-8 h-8 rounded-xl bg-primary-600 text-white grid place-items-center">LC</span>
+        Liam & Cayden
+      </a>
+      <div class="hidden sm:flex items-center gap-6 text-sm">
+        <a href="#details" class="hover:text-primary-700">Details</a>
+        <a href="#gallery" class="hover:text-primary-700">Gallery</a>
+        <!-- <a href="#rsvp" class="hover:text-primary-700">RSVP</a> -->
+        <a href="#location" class="hover:text-primary-700">Location</a>
+      </div>
+      <a href="#details" class="sm:inline-flex hidden px-4 py-2 rounded-xl bg-primary-600 text-white font-medium shadow-soft hover:bg-primary-700 transition">Details</a>
+    </nav>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section id="top" class="relative">
+    <div class="swiper hero-swiper h-[70vh] md:h-[78vh]">
+      <div class="swiper-wrapper">
+        <!-- Replace the placeholder src values with your actual photos. 16:9 images recommended. -->
+        <div class="swiper-slide relative">
+          <img src="6206059062630663815.jpg" alt="Brothers" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 hero-overlay"></div>
+          <div class="absolute inset-0 flex items-center justify-center text-center px-6">
+            <div class="text-white">
+              <p class="uppercase tracking-[.3em] text-sm md:text-base/none">Join Us For A</p>
+              <h1 class="font-display text-4xl md:text-6xl font-bold">Double Celebration</h1>
+              <p class="mt-3 text-lg md:text-xl">Liam's Advance Birthday & Cayden's Christening</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide relative">
+          <img src="6206059062630663814.jpg" alt="Cayden" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        <div class="swiper-slide relative">
+          <img src="6206059062630663812.jpg" alt="Liam" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+      </div>
+      <!-- Pagination & nav -->
+      <div class="swiper-pagination !bottom-6"></div>
+      <div class="swiper-button-prev !text-white"></div>
+      <div class="swiper-button-next !text-white"></div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section id="details" class="max-w-6xl mx-auto px-4 py-14 md:py-20">
+    <header class="text-center">
+      <h2 class="font-display text-3xl md:text-4xl font-bold">Event Details</h2>
+      <div class="title-underline"></div>
+      <p class="mt-4 text-slate-600">We’re excited to celebrate two beautiful milestones with family and friends.</p>
+    </header>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-10">
+      <div class="bg-white rounded-2xl p-6 shadow-soft">
+        <div class="text-5xl">📅</div>
+        <h3 class="mt-3 text-xl font-semibold">Date & Time</h3>
+        <p class="text-slate-600 mt-2">Sunday, <strong>September 28, 2025</strong><br/>
+          Ceremony starts at <strong>10:00 AM</strong></p>
+        <button id="addToCalendar" class="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-600 text-white hover:bg-primary-700 transition">Add to Calendar</button>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow-soft">
+        <div class="text-5xl">⛪</div>
+        <h3 class="mt-3 text-xl font-semibold">Church</h3>
+        <p class="text-slate-600 mt-2">St. Ignatius de Loyola Parish<br/>Camp Evangelista, Patag, CDO City</p>
+        <a href="#location" class="mt-4 inline-block text-primary-700 font-medium hover:underline">View on map</a>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow-soft">
+        <div class="text-5xl">🎉</div>
+        <h3 class="mt-3 text-xl font-semibold">Reception</h3>
+        <p class="text-slate-600 mt-2">Rockwood Hall, Country Village<br/>Villarin St, Cagayan de Oro City</p>
+        <p class="mt-2 italic text-slate-500">Kids: bring socks for the inflatable playground!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SLIDER -->
+  <section id="gallery" class="bg-gradient-to-b from-white to-primary-100/50 py-14 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <header class="text-center">
+        <h2 class="font-display text-3xl md:text-4xl font-bold">Photo Gallery</h2>
+        <div class="title-underline"></div>
+        <p class="mt-4 text-slate-600">Swipe through some of our favorite moments.</p>
+      </header>
+
+      <div class="swiper mt-10 gallery-swiper">
+        <div class="swiper-wrapper">
+          <!-- Replace these with your own images. 4:3 or 3:2 works well. -->
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover" src="6206059062630663813.jpg" alt="Photo 1"/></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover" src="6206059062630663816.jpg" alt="Photo 2"/></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover" src="6206059062630663812.jpg" alt="Photo 3"/></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover" src="6206059062630663809.jpg" alt="Photo 4"/></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <!-- <section id="rsvp" class="max-w-4xl mx-auto px-4 py-14 md:py-20">
+    <div class="bg-white rounded-3xl shadow-soft p-8 md:p-10 text-center">
+      <h2 class="font-display text-3xl md:text-4xl font-bold">RSVP</h2>
+      <div class="title-underline"></div>
+      <p class="mt-4 text-slate-600">Kindly let us know if you’re coming so we can prepare seats and food for everyone. Thank you!</p>
+      <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4"> -->
+        <!-- Replace the href with your Google Form or Typeform link -->
+        <!-- <a href="#" class="px-6 py-3 rounded-xl bg-primary-600 text-white font-medium hover:bg-primary-700 transition">Open RSVP Form</a>
+        <a href="#details" class="px-6 py-3 rounded-xl border border-primary-200 text-primary-700 font-medium hover:bg-primary-50 transition">See Details</a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- LOCATION -->
+  <section id="location" class="bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="font-display text-2xl md:text-3xl font-bold">Church</h3>
+        <p class="mt-2 text-slate-600">St. Ignatius de Loyola Parish, Camp Evangelista, Patag, CDO City</p>
+        <div class="mt-4 rounded-2xl overflow-hidden shadow-soft">
+          <!-- You can replace src with a Google Maps embed link -->
+          <iframe class="w-full h-72" src="https://www.openstreetmap.org/export/embed.html?bbox=124.6%2C8.43%2C124.7%2C8.5&amp;layer=mapnik" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-display text-2xl md:text-3xl font-bold">Reception</h3>
+        <p class="mt-2 text-slate-600">Rockwood Hall, Country Village, Villarin St, Cagayan de Oro City</p>
+        <div class="mt-4 rounded-2xl overflow-hidden shadow-soft">
+          <iframe class="w-full h-72" src="https://www.openstreetmap.org/export/embed.html?bbox=124.6%2C8.43%2C124.7%2C8.5&amp;layer=mapnik" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-sm text-slate-500 py-10">
+    <p>With love, Liam & Cayden’s family • Sept 28, 2025</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Hero slider
+    new Swiper('.hero-swiper', {
+      loop: true,
+      autoplay: { delay: 4000, disableOnInteraction: false },
+      pagination: { el: '.hero-swiper .swiper-pagination', clickable: true },
+      navigation: { nextEl: '.hero-swiper .swiper-button-next', prevEl: '.hero-swiper .swiper-button-prev' }
+    });
+
+    // Gallery slider
+    new Swiper('.gallery-swiper', {
+      slidesPerView: 1.15,
+      spaceBetween: 16,
+      breakpoints: { 640: { slidesPerView: 2.1, spaceBetween: 18 }, 1024: { slidesPerView: 3, spaceBetween: 20 } },
+      pagination: { el: '.gallery-swiper .swiper-pagination', clickable: true }
+    });
+
+    // "Add to Calendar" (generates an .ics file client‑side)
+    const ics = `BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//LiamCayden//Invite//EN\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nBEGIN:VEVENT\nUID:${Date.now()}@liam-cayden\nDTSTAMP:20250912T000000Z\nDTSTART:20250928T020000Z\nDTEND:20250928T060000Z\nSUMMARY:Liam's Advance Birthday & Cayden's Christening\nLOCATION:St. Ignatius de Loyola Parish; then Rockwood Hall, Country Village\nDESCRIPTION:Join us for a double celebration! Ceremony at 10:00 AM.\nEND:VEVENT\nEND:VCALENDAR`;
+    document.getElementById('addToCalendar').addEventListener('click', () => {
+      const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'liam-cayden-invite.ics'; a.click();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
