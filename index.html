@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Liam & Cayden – Double Celebration</title>
-  <meta name="description" content="A one‑page invitation website with sliders for Liam's Advance Birthday and Cayden's Christening." />
+  <meta name="description"
+    content="A one‑page invitation website with sliders for Liam's Advance Birthday and Cayden's Christening." />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
   <!-- Tailwind (CDN build) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -46,13 +50,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
     /* Smooth scroll */
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
+
     /* Decorative underline */
-    .title-underline::after { content: ""; display:block; width:80px; height:4px; margin:14px auto 0; background:linear-gradient(90deg,#2a5fff,#8fb2ff); border-radius:999px; }
+    .title-underline::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      margin: 14px auto 0;
+      background: linear-gradient(90deg, #2a5fff, #8fb2ff);
+      border-radius: 999px;
+    }
+
     /* Hero overlay */
-    .hero-overlay { background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.35)); }
+    .hero-overlay {
+      background: linear-gradient(180deg, rgba(0, 0, 0, .45), rgba(0, 0, 0, .35));
+    }
   </style>
 </head>
+
 <body class="bg-primary-50 text-slate-800 font-sans">
   <!-- NAV -->
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
@@ -64,10 +83,10 @@
       <div class="hidden sm:flex items-center gap-6 text-sm">
         <a href="#details" class="hover:text-primary-700">Details</a>
         <a href="#gallery" class="hover:text-primary-700">Gallery</a>
-        <!-- <a href="#rsvp" class="hover:text-primary-700">RSVP</a> -->
         <a href="#location" class="hover:text-primary-700">Location</a>
       </div>
-      <a href="#details" class="sm:inline-flex hidden px-4 py-2 rounded-xl bg-primary-600 text-white font-medium shadow-soft hover:bg-primary-700 transition">Details</a>
+      <a href="#details"
+        class="sm:inline-flex hidden px-4 py-2 rounded-xl bg-primary-600 text-white font-medium shadow-soft hover:bg-primary-700 transition">Details</a>
     </nav>
   </header>
 
@@ -115,22 +134,24 @@
       <div class="bg-white rounded-2xl p-6 shadow-soft">
         <div class="text-5xl">📅</div>
         <h3 class="mt-3 text-xl font-semibold">Date & Time</h3>
-        <p class="text-slate-600 mt-2">Sunday, <strong>September 28, 2025</strong><br/>
+        <p class="text-slate-600 mt-2">Sunday, <strong>September 28, 2025</strong><br />
           Ceremony starts at <strong>10:00 AM</strong></p>
-        <button id="addToCalendar" class="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-600 text-white hover:bg-primary-700 transition">Add to Calendar</button>
+        <button id="addToCalendar"
+          class="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-600 text-white hover:bg-primary-700 transition">Add
+          to Calendar</button>
       </div>
 
       <div class="bg-white rounded-2xl p-6 shadow-soft">
         <div class="text-5xl">⛪</div>
         <h3 class="mt-3 text-xl font-semibold">Church</h3>
-        <p class="text-slate-600 mt-2">St. Ignatius de Loyola Parish<br/>Camp Evangelista, Patag, CDO City</p>
+        <p class="text-slate-600 mt-2">St. Ignatius de Loyola Parish<br />Camp Evangelista, Patag, CDO City</p>
         <a href="#location" class="mt-4 inline-block text-primary-700 font-medium hover:underline">View on map</a>
       </div>
 
       <div class="bg-white rounded-2xl p-6 shadow-soft">
         <div class="text-5xl">🎉</div>
         <h3 class="mt-3 text-xl font-semibold">Reception</h3>
-        <p class="text-slate-600 mt-2">Rockwood Hall, Country Village<br/>Villarin St, Cagayan de Oro City</p>
+        <p class="text-slate-600 mt-2">Rockwood Hall, Country Village<br />Villarin St, Cagayan de Oro City</p>
         <p class="mt-2 italic text-slate-500">Kids: bring socks for the inflatable playground!</p>
       </div>
     </div>
@@ -148,29 +169,35 @@
       <div class="swiper mt-10 gallery-swiper">
         <div class="swiper-wrapper">
           <!-- Replace these with your own images. 4:3 or 3:2 works well. -->
-          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover" src="6206059062630663813.jpg" alt="Photo 1"/></div>
-          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover" src="6206059062630663816.jpg" alt="Photo 2"/></div>
-          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover" src="6206059062630663812.jpg" alt="Photo 3"/></div>
-          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover" src="6206059062630663809.jpg" alt="Photo 4"/></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663813.jpg" alt="Photo 1" /></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663816.jpg" alt="Photo 2" /></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663812.jpg" alt="Photo 3" /></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663809.jpg" alt="Photo 4" /></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663945.jpg" alt="Photo 4" /></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663951.jpg" alt="Photo 4" /></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663804.jpg" alt="Photo 4" /></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663950.jpg" alt="Photo 4" /></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663949.jpg" alt="Photo 4" /></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663948.jpg" alt="Photo 4" /></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663947.jpg" alt="Photo 4" /></div>
+          <div class="swiper-slide"><img class="rounded-2xl shadow-soft w-full h-[320px] object-cover"
+              src="6206059062630663946.jpg" alt="Photo 4" /></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
-
-  <!-- RSVP -->
-  <!-- <section id="rsvp" class="max-w-4xl mx-auto px-4 py-14 md:py-20">
-    <div class="bg-white rounded-3xl shadow-soft p-8 md:p-10 text-center">
-      <h2 class="font-display text-3xl md:text-4xl font-bold">RSVP</h2>
-      <div class="title-underline"></div>
-      <p class="mt-4 text-slate-600">Kindly let us know if you’re coming so we can prepare seats and food for everyone. Thank you!</p>
-      <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4"> -->
-        <!-- Replace the href with your Google Form or Typeform link -->
-        <!-- <a href="#" class="px-6 py-3 rounded-xl bg-primary-600 text-white font-medium hover:bg-primary-700 transition">Open RSVP Form</a>
-        <a href="#details" class="px-6 py-3 rounded-xl border border-primary-200 text-primary-700 font-medium hover:bg-primary-50 transition">See Details</a>
-      </div>
-    </div>
-  </section> -->
 
   <!-- LOCATION -->
   <section id="location" class="bg-white border-y border-slate-200">
@@ -180,14 +207,18 @@
         <p class="mt-2 text-slate-600">St. Ignatius de Loyola Parish, Camp Evangelista, Patag, CDO City</p>
         <div class="mt-4 rounded-2xl overflow-hidden shadow-soft">
           <!-- You can replace src with a Google Maps embed link -->
-          <iframe class="w-full h-72" src="https://www.openstreetmap.org/export/embed.html?bbox=124.6%2C8.43%2C124.7%2C8.5&amp;layer=mapnik" loading="lazy"></iframe>
+          <iframe class="w-full h-72"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=124.6%2C8.43%2C124.7%2C8.5&amp;layer=mapnik"
+            loading="lazy"></iframe>
         </div>
       </div>
       <div>
         <h3 class="font-display text-2xl md:text-3xl font-bold">Reception</h3>
         <p class="mt-2 text-slate-600">Rockwood Hall, Country Village, Villarin St, Cagayan de Oro City</p>
         <div class="mt-4 rounded-2xl overflow-hidden shadow-soft">
-          <iframe class="w-full h-72" src="https://www.openstreetmap.org/export/embed.html?bbox=124.6%2C8.43%2C124.7%2C8.5&amp;layer=mapnik" loading="lazy"></iframe>
+          <iframe class="w-full h-72"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=124.6%2C8.43%2C124.7%2C8.5&amp;layer=mapnik"
+            loading="lazy"></iframe>
         </div>
       </div>
     </div>
@@ -226,5 +257,61 @@
       URL.revokeObjectURL(url);
     });
   </script>
+
+  <!-- LIGHTBOX (click any gallery image) -->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-[9999] p-4 select-none">
+    <button id="lightboxClose" aria-label="Close"
+      class="absolute top-4 right-4 rounded-full bg-white/10 hover:bg-white/20 text-white text-2xl leading-none px-3 py-1">✕</button>
+    <button id="lightboxPrev" aria-label="Previous"
+      class="absolute left-3 md:left-6 rounded-full bg-white/10 hover:bg-white/20 text-white text-3xl leading-none px-4 py-2">‹</button>
+    <img id="lightboxImg" src="" alt="Enlarged photo"
+      class="max-w-[95vw] max-h-[90vh] rounded-2xl shadow-soft object-contain" />
+    <button id="lightboxNext" aria-label="Next"
+      class="absolute right-3 md:right-6 rounded-full bg-white/10 hover:bg-white/20 text-white text-3xl leading-none px-4 py-2">›</button>
+  </div>
+
+  <script>
+    // Simple Lightbox for Gallery
+    (function () {
+      const thumbs = Array.from(document.querySelectorAll('.gallery-swiper .swiper-slide img'));
+      if (!thumbs.length) return;
+      const box = document.getElementById('lightbox');
+      const img = document.getElementById('lightboxImg');
+      const closeBtn = document.getElementById('lightboxClose');
+      const prevBtn = document.getElementById('lightboxPrev');
+      const nextBtn = document.getElementById('lightboxNext');
+      let index = 0;
+
+      const open = (i) => {
+        index = i;
+        img.src = thumbs[index].getAttribute('data-full') || thumbs[index].src;
+        box.classList.remove('hidden');
+        box.classList.add('flex');
+        document.body.classList.add('overflow-hidden');
+      };
+      const close = () => {
+        box.classList.add('hidden');
+        box.classList.remove('flex');
+        document.body.classList.remove('overflow-hidden');
+      };
+      const show = (delta) => {
+        index = (index + delta + thumbs.length) % thumbs.length;
+        img.src = thumbs[index].getAttribute('data-full') || thumbs[index].src;
+      };
+
+      thumbs.forEach((t, i) => t.addEventListener('click', () => open(i)));
+      closeBtn.addEventListener('click', close);
+      box.addEventListener('click', (e) => { if (e.target === box) close(); });
+      prevBtn.addEventListener('click', () => show(-1));
+      nextBtn.addEventListener('click', () => show(1));
+      document.addEventListener('keydown', (e) => {
+        if (box.classList.contains('hidden')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowRight') show(1);
+        if (e.key === 'ArrowLeft') show(-1);
+      });
+    })();
+  </script>
 </body>
+
 </html>
